@@ -136,3 +136,61 @@ h1 {
     color: #757575; /* 落ち着いたグレー */
     font-weight: bold;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .title-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .timer-modes {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mode-button {
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+
+    .timer-display {
+        font-size: 5em;
+        margin-bottom: 30px;
+    }
+
+    .controls {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .control-button {
+        padding: 12px 20px;
+        margin: 8px;
+        font-size: 1em;
+    }
+
+    .pomodoro-count {
+        font-size: 1.2em;
+    }
+
+    body::before, body::after {
+        display: none; /* モバイルでは背景のSVGを非表示 */
+    }
+}
